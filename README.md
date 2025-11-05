@@ -1,4 +1,4 @@
-Script to download a custom set of Win10/11 apps to uninstall and then run Raphire Debloat againsst that list.
+Script to download a custom set of Win10/11 apps to uninstall and then run Raphire Debloat against that list.
 https://github.com/Raphire/Win11Debloat
 All credit goes to Raphire for this incredible script!
 By default, his script would remove Microsoft Sticky Notes. Yes, it's deprecated now in favor of OneNote, but many of my users still use it, and if it's removed, all of their data in the sticky notes goes with it.
