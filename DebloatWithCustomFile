@@ -1,0 +1,24 @@
+# Define target folder and file URL
+$targetFolder = Join-Path $env:TEMP "Win11Debloat"
+$fileName = "CustomAppsList"
+$targetFile = Join-Path $targetFolder $fileName
+
+# Use the RAW GitHub file URL
+$fileUrl = "https://raw.githubusercontent.com/timothyjperkins/RaphireDebloatConfig/main/CustomAppsList"
+
+# Create folder if it doesn't exist
+if (-not (Test-Path $targetFolder)) {
+    New-Item -ItemType Directory -Path $targetFolder -Force | Out-Null
+}
+
+# Download the file
+Invoke-WebRequest -Uri $fileUrl -OutFile $targetFile -UseBasicParsing
+
+# Confirm success
+Write-Host "File downloaded successfully to $targetFile"
+
+# Set the Execution Policy so scripts will run
+Set-ExecutionPolicy Unrestricted -Scope Process -Force
+
+# Run Raphire Win11 Debloat with the custom app removal list (silently)
+& ([scriptblock]::Create((irm "https://debloat.raphi.re/"))) -RemoveAppsCustom -Silent
