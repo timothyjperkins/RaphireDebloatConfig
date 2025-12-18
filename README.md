@@ -89,7 +89,6 @@ Microsoft.MicrosoftSolitaireCollection<br>
 Microsoft.MixedReality.Portal<br>
 Microsoft.NetworkSpeedTest<br>
 Microsoft.News<br>
-Microsoft.Office.OneNote<br>
 Microsoft.Office.Sway<br>
 Microsoft.OneConnect<br>
 Microsoft.People<br>
@@ -97,7 +96,6 @@ Microsoft.PowerAutomateDesktop<br>
 Microsoft.Print3D<br>
 Microsoft.ScreenSketch<br>
 Microsoft.SkypeApp<br>
-Microsoft.Todos<br>
 Microsoft.Windows.DevHome<br>
 Microsoft.WindowsAlarms<br>
 Microsoft.WindowsFeedbackHub<br>
